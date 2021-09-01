@@ -46,7 +46,7 @@ header{
 
 img{
     display: block;
-    height: 450px;
+    height: 400px;
     object-fit: cover;
     width: auto;
     animation: arriba 1s ease-in;
@@ -58,12 +58,12 @@ img{
 }
 
 .textos h1{
-    font-size: 50px;
+    font-size: 80px;
     animation: moverDerecha 1s ease-in;
 }
 
 .textos h2{
-    font-size: 11px;
+    font-size: 30px;
     animation: moverIzquierda 0.8s ease-in;
 }
 
@@ -157,7 +157,7 @@ img{
 
 @media screen and (max-width: 1000px) {
     img{
-        height: 400px;
+        height: 350px;
     }    
 
 }
@@ -165,27 +165,29 @@ img{
 
 @media screen and (max-width: 800px) {
     img{
-        height: 370px;
+        height: 280px;
     }
-    textos h1{
-        font-size: 40px;
+    .textos h1{
+        font-size: 70px;
     }
-    textos h2{
-        font-size: 10px;
+   .textos h2{
+        font-size: 25px;
     }
 }
 
 @media screen and (max-width: 700px) {
     img{
-        height: 250px;
+        height: 240px;
     }
-    textos h1{
-        font-size: 35px;
+    .textos h1{
+        font-size: 40px;
     }
-    textos h2{
-        font-size: 8px;
+   .textos h2{
+        font-size: 15px;
     }
 }
+
+
 
 @media screen and (max-width: 450px) {
     .conteiner{
@@ -196,15 +198,37 @@ img{
     .textos{
         width: 100%;
         text-align: center;
-
     }
     img{
-        height: 160px;
+        margin-top: 10px;
+        height: 180px;
     }
-    textos h1{
+    .textos h1{
         font-size: 60px;
     }
-    textos h2{
+    .textos h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .conteiner{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        margin-top: 10px;
+        height: 160px;
+    }
+    .textos h1{
+        font-size: 50px;
+    }
+    .textos h2{
         font-size: 15px;
     }
 }
