@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1f6846737.js" crossorigin="anonymous"></script>
     <title>Document</title>
 
 </head>
@@ -38,34 +39,59 @@
         </div>
     </div>
 
-    <section>
+    <section class="cuerpo">
         <div class="conteiner2">
             <div class="form-conteiner">
                 <div class="signin-signup">
                     <form action="" class="sign-in-form">
-                        <h2 class="title">Registrar</h2>
+                        <h2 class="title">Ey! Me ayudas con algunso datos?</h2>
                         <div class="input-filed">
-                            <i class="fas fas-user"></i>
-                            <input type="text" name="" id="" placeholder="Nombre Completo">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="" id="in" placeholder="Nombre Completo">
                         </div>
                         <div class="input-filed">
-                            <i class="fas fas-user"></i>
-                            <input type="text" name="" id="" placeholder="Nacionalidad">
+                            <i class="fas fa-globe-americas"></i>
+                            <input type="text" name="" id="inn" placeholder="Nacionalidad">
                         </div>
                         <div class="input-filed">
-                            <i class="fas fas-user"></i>
-                            <input type="email" name="" id="" placeholder="Correo Electronico">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="" id="ice" placeholder="Correo Electronico">
                         </div>
                         <div class="input-filed">
-                            <i class="fas fas-user"></i>
-                            <input type="date" name="" id="" placeholder="Fecha de nacimiento">
+                            <i class="fas fa-calendar-week"></i>
+                            <input type="date" name="" id="idd" placeholder="Fecha de nacimiento">
                         </div>
-                        <input type="submit" value="login" class="btn solid">
+                        <input type="button" value="login" class="btn solid" onclick="onclickBtnForm()">
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="saludo">
+        <div class="conteiner2">
+            <div class="conteiner3">
+                <div class="conteiner-colum">
+                    <div class="left">
+                        <img src="./src/img/img-phone.svg" alt="">
+                    </div>
+                    <div class="rigth">
+                        <h2 class="title" id="title-saludo">Hola NOMBRE un placer conocerte!</h2>
+                        <p>Me estoy conectando a una APi... Quizas falle</p>
+                        <meter min="0" max="100" id="meter-value" value="0" class="medidor"></meter>
+                    </div>
+                   
+                </div>
+                
+            </div>
+           
+        </div>
+       
+    </section>
+
+
+
     <script src="./src/scripts/script.js"></script>
+    <script src="./src/scripts/script-form.js"></script>
 </body>
 </html>
